@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of number and show it in another tag</title>
+</head>
+
+<body>
+
+
+    <input type="number" id="in1">input-1 <br>
+    <input type="number" id="in2">input-2 <br>
+    <button id="add">Addition</button>
+    <h1 id="display"></h1>
+    <input id="result" type="text">
+    <script>
+        var inp1 = document.getElementById("in1");
+        var inp2 = document.getElementById("in2");
+        var addition = document.getElementById('add');
+        var show = document.getElementById('display');
+        var results = document.getElementById('result');
+
+        addition.addEventListener('click', additionFunction);
+
+
+        function additionFunction() {
+            var inpu = Number(inp1.value) + Number(inp2.value);
+// or
+//             var inpu = parseFloat(inp1.value) + parseFloat(inp2.value);
+           show.innerHTML= inpu;
+           results.value=inpu
+
+        }
+    </script>
+</body>
+
+</html>

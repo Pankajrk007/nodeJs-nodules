@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key event with space..</title>
+</head>
+<body>
+    
+
+    <script>
+        document.addEventListener('keyup', spaceUp);
+        document.addEventListener('keydown', spaceDown);
+
+        function spaceUp(event){
+            if (event.key ==' '){
+                document.body.style.backgroundColor='red'
+            }
+            else{
+                document.body.style.backgroundColor='blue'
+
+            }
+        }
+        function spaceDown(event){
+            if (event.key==" "){
+                document.body.style.backgroundColor='orange'
+
+            }
+        }
+
+    </script>
+</body>
+</html>
